@@ -33,8 +33,14 @@ DeepSeek 一行只加头像、思考提示保持官方样式：官方那套鲸�
 
 ## 安装
 
-- **插件市场**：在 DSH 的插件市场（Discover）里搜索 `dsh-anime-model-avatars` 安装。
+- **自定义索引**：在 DSH 的插件市场（Discover）里添加索引地址
+
+  `https://raw.githubusercontent.com/chinokoyuki/dsh-anime-model-avatars/main/market/index.json`
+
+  然后从列表里安装。索引固定到具体 commit，走 Git 安装，不依赖 npm。
 - **本地目录**：开发者可以把仓库克隆下来，用 DSH 的插件管理从目录安装（`plugin_manager` 的 `install_bundle`，目标填仓库的绝对路径）。
+
+npm 包名同样是 `dsh-anime-model-avatars`，发布到 npm 之后市场里也能直接搜到。
 
 装好或更新后刷新一次页面。客户端插件的热更新不一定会送达已经打开的页面，刷新最稳。在设置 → 插件里能看到它，带图标、标题和说明。
 
@@ -64,6 +70,8 @@ assets/                    README 用到的头像、图标和截图
 3. `thinkingStyleOf()` 里加分支，返回新的样式名。
 
 改完先 `node --check client.js`，再重启插件看效果。头像建议裁掉透明边距、补成正方形后缩到 64×64，内联成 data URI。
+
+仓库 topics 和 `package.json` 的 keywords 都带 `dsh-plugin`，索引器按这个标记收录。`market/index.json` 是格式 1 的插件市场索引，改版本或换 commit 后要同步更新它。
 
 ## 许可
 
