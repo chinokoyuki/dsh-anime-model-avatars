@@ -1,0 +1,53 @@
+{
+  "name": "dsh-anime-model-avatars",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Anime character avatars and per-provider thinking styles for the DSH model picker.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.png",
+    "docs/*.svg",
+    "assets/**/*"
+  ],
+  "engines": {
+    "dsh": ">=0.2.2-0"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "dsh-ui-plugin",
+    "deepseek-harness",
+    "model-picker",
+    "avatar",
+    "thinking-indicator"
+  ],
+  "author": "chinokoyuki",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chinokoyuki/dsh-anime-model-avatars.git"
+  },
+  "homepage": "https://github.com/chinokoyuki/dsh-anime-model-avatars#readme",
+  "bugs": {
+    "url": "https://github.com/chinokoyuki/dsh-anime-model-avatars/issues"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+    }
+  }
+}

@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="1250" viewBox="0 0 920 1250"
+     font-family="'Segoe UI', 'Microsoft YaHei', 'PingFang SC', sans-serif">
+  <title>Kimi 月亮 / GLM 狐尾 / Qwen 折扇 / MiniMax 相机 思考提示动画预览</title>
+  <desc>四排品牌样式：Kimi 月影灰月亮、GLM 纯白/纯黑狐尾摇摆、Qwen 蓝紫折扇轻摇、MiniMax 红橙相机呼吸；每排含深色与浅色主题。</desc>
+  <defs>
+    <linearGradient id="moonTextDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a9b3bd"/>
+      <stop offset="0.5" stop-color="#eef2f6"/>
+      <stop offset="1" stop-color="#a9b3bd"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-0.9 0; 0.9 0; -0.9 0" dur="3.4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="moonTextLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#101317"/>
+      <stop offset="0.5" stop-color="#6b737b"/>
+      <stop offset="1" stop-color="#101317"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-0.9 0; 0.9 0; -0.9 0" dur="3.4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="foxTextDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#ffffff"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-0.9 0; 0.9 0; -0.9 0" dur="2.4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="foxTextLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000000"/>
+      <stop offset="0.5" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#000000"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-0.9 0; 0.9 0; -0.9 0" dur="2.4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="fanTextDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a9a5ff"/>
+      <stop offset="0.5" stop-color="#dedbff"/>
+      <stop offset="1" stop-color="#a9a5ff"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-0.9 0; 0.9 0; -0.9 0" dur="2.6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="fanTextLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4e49d6"/>
+      <stop offset="0.5" stop-color="#8f88f0"/>
+      <stop offset="1" stop-color="#4e49d6"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-0.9 0; 0.9 0; -0.9 0" dur="2.6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="cameraTextDark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff9b73"/>
+      <stop offset="0.5" stop-color="#ffd3bd"/>
+      <stop offset="1" stop-color="#ff9b73"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-0.9 0; 0.9 0; -0.9 0" dur="2.2s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="cameraTextLight" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#cf4a1d"/>
+      <stop offset="0.5" stop-color="#ef8f63"/>
+      <stop offset="1" stop-color="#cf4a1d"/>
+      <animateTransform attributeName="gradientTransform" type="translate"
+                        values="-0.9 0; 0.9 0; -0.9 0" dur="2.2s" repeatCount="indefinite"/>
+    </linearGradient>
+    <g id="foxTail" fill="none" stroke="currentColor" stroke-linejoin="round">
+      <path d="M7 2.8C9.4 2.2 11.8 3.8 12.4 6.4c.6 2.8-.5 5.6-2.3 7.1-.5.4-1.2.8-1.9.9.3-.8.2-1.5-.2-2-.9-1.2-1.6-2.8-1.5-4.6.1-1.9.2-3.6.5-5z" stroke-width="1.05"/>
+      <path d="M8.7 11.5c.8-.5 1.4-1.2 1.7-2.1" stroke-width=".9" stroke-linecap="round"/>
+    </g>
+    <g id="foldingFan" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M2.5 7.6A8.59 8.59 0 0 1 13.5 7.6L8 14.2Z" stroke-width="1"/>
+      <path d="M8 14.2 10.2 5.9M8 14.2 5.8 5.9" stroke-width="1"/>
+      <path d="M6.7 14.2h2.6" stroke-width="1"/>
+    </g>
+    <g id="camera" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M3.8 5.4h8.4a1.6 1.6 0 0 1 1.6 1.6v4.6a1.6 1.6 0 0 1-1.6 1.6H3.8a1.6 1.6 0 0 1-1.6-1.6V7a1.6 1.6 0 0 1 1.6-1.6z" stroke-width="1"/>
+      <path d="M6.1 5.4 7 3.5h2l.9 1.9" stroke-width="1"/>
+      <circle cx="8" cy="9.4" r="2.2" stroke-width="1"/>
+      <circle cx="12.1" cy="7" r=".45" fill="currentColor" stroke="none"/>
+    </g>
+  </defs>
+
+  <!-- ============ row 1: Kimi moon ============ -->
+  <text x="20" y="26" font-size="14" fill="#8b939c">Kimi · 深色模式（月影灰）</text>
+  <text x="470" y="26" font-size="14" fill="#6f7780">Kimi · 浅色模式（黑色）</text>
+  <rect x="20" y="42" width="430" height="250" rx="14" fill="#15181c" stroke="#2a2f36"/>
+  <rect x="470" y="42" width="430" height="250" rx="14" fill="#f4f5f7" stroke="#dfe3e7"/>
+
+  <g transform="translate(60,94) scale(7)">
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+                        values="0 0; 0 -0.9; 0 0" dur="3.4s" repeatCount="indefinite"
+                        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+                          values="-5 8 8; 5 8 8; -5 8 8" dur="3.4s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+        <path d="M10.6 1.7a6.3 6.3 0 1 0 0 12.6 9.2 9.2 0 0 1 0-12.6z"
+              fill="none" stroke="#a9b3bd" stroke-width="1.05" stroke-linejoin="round"/>
+        <path d="M12.9 1.9c.12 1.15.75 1.78 1.9 1.9-1.15.12-1.78.75-1.9 1.9-.12-1.15-.75-1.78-1.9-1.9 1.15-.12 1.78-.75 1.9-1.9z"
+              fill="#d7dee5">
+          <animate attributeName="opacity" values="0.2; 1; 0.2" dur="2.7s" repeatCount="indefinite"/>
+        </path>
+      </g>
+    </g>
+  </g>
+  <text x="168" y="176" font-size="26" font-weight="600" fill="url(#moonTextDark)">析构万理中</text>
+  <text x="320" y="176" font-size="14" fill="#7e8790">，用时 3 秒 ···</text>
+
+  <g transform="translate(510,94) scale(7)">
+    <g>
+      <animateTransform attributeName="transform" type="translate"
+                        values="0 0; 0 -0.9; 0 0" dur="3.4s" repeatCount="indefinite"
+                        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <g>
+        <animateTransform attributeName="transform" type="rotate"
+                          values="-5 8 8; 5 8 8; -5 8 8" dur="3.4s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+        <path d="M10.6 1.7a6.3 6.3 0 1 0 0 12.6 9.2 9.2 0 0 1 0-12.6z"
+              fill="none" stroke="#101317" stroke-width="1.05" stroke-linejoin="round"/>
+        <path d="M12.9 1.9c.12 1.15.75 1.78 1.9 1.9-1.15.12-1.78.75-1.9 1.9-.12-1.15-.75-1.78-1.9-1.9 1.15-.12 1.78-.75 1.9-1.9z"
+              fill="#101317">
+          <animate attributeName="opacity" values="0.2; 1; 0.2" dur="2.7s" repeatCount="indefinite"/>
+        </path>
+      </g>
+    </g>
+  </g>
+  <text x="618" y="176" font-size="26" font-weight="600" fill="url(#moonTextLight)">析构万理中</text>
+  <text x="770" y="176" font-size="14" fill="#5f676f">，用时 3 秒 ···</text>
+
+  <!-- ============ row 2: GLM fox tail sway ============ -->
+  <text x="20" y="330" font-size="14" fill="#8b939c">GLM · 深色模式（纯白 · 狐尾左右摇摆）</text>
+  <text x="470" y="330" font-size="14" fill="#6f7780">GLM · 浅色模式（纯黑 · 狐尾左右摇摆）</text>
+  <rect x="20" y="346" width="430" height="250" rx="14" fill="#15181c" stroke="#2a2f36"/>
+  <rect x="470" y="346" width="430" height="250" rx="14" fill="#f4f5f7" stroke="#dfe3e7"/>
+
+  <g transform="translate(62,402) scale(7.5)" style="color:#ffffff">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-15 7 2.8; 15 7 2.8; -15 7 2.8" dur="2.4s" repeatCount="indefinite"
+                        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <use href="#foxTail"/>
+    </g>
+  </g>
+  <text x="212" y="480" font-size="26" font-weight="600" fill="url(#foxTextDark)">格物穷理中</text>
+  <text x="364" y="480" font-size="14" fill="#8b939c">，用时 3 秒 ···</text>
+  <text x="62" y="572" font-size="10" fill="#6f7780">实际尺寸 14px：</text>
+  <svg x="144" y="560" width="14" height="14" viewBox="0 0 16 16" style="color:#ffffff">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-15 7 2.8; 15 7 2.8; -15 7 2.8" dur="2.4s" repeatCount="indefinite"/>
+      <use href="#foxTail"/>
+    </g>
+  </svg>
+  <text x="166" y="572" font-size="13" fill="#ffffff">格物穷理中，用时 3 秒 ···</text>
+
+  <g transform="translate(512,402) scale(7.5)" style="color:#000000">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-15 7 2.8; 15 7 2.8; -15 7 2.8" dur="2.4s" repeatCount="indefinite"
+                        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <use href="#foxTail"/>
+    </g>
+  </g>
+  <text x="662" y="480" font-size="26" font-weight="600" fill="url(#foxTextLight)">格物穷理中</text>
+  <text x="814" y="480" font-size="14" fill="#5f676f">，用时 3 秒 ···</text>
+  <text x="512" y="572" font-size="10" fill="#8b939c">实际尺寸 14px：</text>
+  <svg x="594" y="560" width="14" height="14" viewBox="0 0 16 16" style="color:#000000">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-15 7 2.8; 15 7 2.8; -15 7 2.8" dur="2.4s" repeatCount="indefinite"/>
+      <use href="#foxTail"/>
+    </g>
+  </svg>
+  <text x="616" y="572" font-size="13" fill="#000000">格物穷理中，用时 3 秒 ···</text>
+
+  <!-- ============ row 3: Qwen folding fan ============ -->
+  <text x="20" y="634" font-size="14" fill="#8b939c">Qwen · 深色模式（蓝紫 · 折扇轻摇）</text>
+  <text x="470" y="634" font-size="14" fill="#6f7780">Qwen · 浅色模式（蓝紫 · 折扇轻摇）</text>
+  <rect x="20" y="650" width="430" height="250" rx="14" fill="#15181c" stroke="#2a2f36"/>
+  <rect x="470" y="650" width="430" height="250" rx="14" fill="#f4f5f7" stroke="#dfe3e7"/>
+
+  <g transform="translate(62,706) scale(7.5)" style="color:#a9a5ff">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-9 8 14.2; 9 8 14.2; -9 8 14.2" dur="2.6s" repeatCount="indefinite"
+                        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <use href="#foldingFan"/>
+    </g>
+  </g>
+  <text x="212" y="784" font-size="26" font-weight="600" fill="url(#fanTextDark)">博问通义中</text>
+  <text x="364" y="784" font-size="14" fill="#8b939c">，用时 3 秒 ···</text>
+  <text x="62" y="876" font-size="10" fill="#6f7780">实际尺寸 14px：</text>
+  <svg x="144" y="864" width="14" height="14" viewBox="0 0 16 16" style="color:#a9a5ff">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-9 8 14.2; 9 8 14.2; -9 8 14.2" dur="2.6s" repeatCount="indefinite"/>
+      <use href="#foldingFan"/>
+    </g>
+  </svg>
+  <text x="166" y="876" font-size="13" fill="#a9a5ff">博问通义中，用时 3 秒 ···</text>
+
+  <g transform="translate(512,706) scale(7.5)" style="color:#4e49d6">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-9 8 14.2; 9 8 14.2; -9 8 14.2" dur="2.6s" repeatCount="indefinite"
+                        calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+      <use href="#foldingFan"/>
+    </g>
+  </g>
+  <text x="662" y="784" font-size="26" font-weight="600" fill="url(#fanTextLight)">博问通义中</text>
+  <text x="814" y="784" font-size="14" fill="#5f676f">，用时 3 秒 ···</text>
+  <text x="512" y="876" font-size="10" fill="#8b939c">实际尺寸 14px：</text>
+  <svg x="594" y="864" width="14" height="14" viewBox="0 0 16 16" style="color:#4e49d6">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+                        values="-9 8 14.2; 9 8 14.2; -9 8 14.2" dur="2.6s" repeatCount="indefinite"/>
+      <use href="#foldingFan"/>
+    </g>
+  </svg>
+  <text x="616" y="876" font-size="13" fill="#4e49d6">博问通义中，用时 3 秒 ···</text>
+
+  <!-- ============ row 4: MiniMax camera ============ -->
+  <text x="20" y="938" font-size="14" fill="#8b939c">MiniMax · 深色模式（红橙 · 相机呼吸）</text>
+  <text x="470" y="938" font-size="14" fill="#6f7780">MiniMax · 浅色模式（红橙 · 相机呼吸）</text>
+  <rect x="20" y="954" width="430" height="250" rx="14" fill="#15181c" stroke="#2a2f36"/>
+  <rect x="470" y="954" width="430" height="250" rx="14" fill="#f4f5f7" stroke="#dfe3e7"/>
+
+  <g transform="translate(62,1010) scale(7.5)" style="color:#ff9b73">
+    <g transform="translate(8 9.4)">
+      <g>
+        <animateTransform attributeName="transform" type="scale"
+                          values="1; 1.06; 1" dur="2.2s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+        <g transform="translate(-8 -9.4)"><use href="#camera"/></g>
+      </g>
+    </g>
+  </g>
+  <text x="212" y="1088" font-size="26" font-weight="600" fill="url(#cameraTextDark)">臻于至善中</text>
+  <text x="364" y="1088" font-size="14" fill="#8b939c">，用时 3 秒 ···</text>
+  <text x="62" y="1180" font-size="10" fill="#6f7780">实际尺寸 14px：</text>
+  <svg x="144" y="1168" width="14" height="14" viewBox="0 0 16 16" style="color:#ff9b73"><use href="#camera"/></svg>
+  <text x="166" y="1180" font-size="13" fill="#ff9b73">臻于至善中，用时 3 秒 ···</text>
+
+  <g transform="translate(512,1010) scale(7.5)" style="color:#cf4a1d">
+    <g transform="translate(8 9.4)">
+      <g>
+        <animateTransform attributeName="transform" type="scale"
+                          values="1; 1.06; 1" dur="2.2s" repeatCount="indefinite"
+                          calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+        <g transform="translate(-8 -9.4)"><use href="#camera"/></g>
+      </g>
+    </g>
+  </g>
+  <text x="662" y="1088" font-size="26" font-weight="600" fill="url(#cameraTextLight)">臻于至善中</text>
+  <text x="814" y="1088" font-size="14" fill="#5f676f">，用时 3 秒 ···</text>
+  <text x="512" y="1180" font-size="10" fill="#8b939c">实际尺寸 14px：</text>
+  <svg x="594" y="1168" width="14" height="14" viewBox="0 0 16 16" style="color:#cf4a1d"><use href="#camera"/></svg>
+  <text x="616" y="1180" font-size="13" fill="#cf4a1d">臻于至善中，用时 3 秒 ···</text>
+
+  <text x="20" y="1230" font-size="12" fill="#6f7780">MiniMax 图标 = 线条照相机（机身 + 取景器 + 镜头 + 指示灯），呼吸缩放 1→1.06 并轻摆 -3°；红橙随主题深浅切换，计时器与流光保留。</text>
+</svg>

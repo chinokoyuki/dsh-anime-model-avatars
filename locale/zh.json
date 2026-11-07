@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "二次元模型头像和思考样式",
+    "description": "在模型列表与输入框下方为 DeepSeek、GLM、Kimi、MiniMax、Qwen 显示二次元角色头像；Kimi 思考时显示月影灰月亮与「析构万理中」，GLM 显示纯白/纯黑狐尾摇摆与「格物穷理中」，Qwen 显示蓝紫折扇与「博问通义中」，MiniMax 显示红橙相机与「臻于至善中」。"
+  }
+}
