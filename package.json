@@ -18,7 +18,6 @@
     "locale/*.json",
     "icon.png",
     "docs/*.svg",
-    "market/*.json",
     "assets/**/*"
   ],
   "engines": {
@@ -44,11 +43,15 @@
     "url": "https://github.com/chinokoyuki/dsh-anime-model-avatars/issues"
   },
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "immediately": true,
-      "inject": ["@deepseek-ai/dsh-client-ui-conversation"]
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
     }
   }
 }

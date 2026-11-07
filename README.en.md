@@ -33,14 +33,16 @@ A side-by-side sheet of the four thinking styles (Kimi, GLM, Qwen, MiniMax from 
 
 ## Install
 
-- **Custom index**: add this index URL in the DSH plugin market (Discover)
+Install straight from GitHub. In DSH, set the install target to:
 
-  `https://raw.githubusercontent.com/chinokoyuki/dsh-anime-model-avatars/main/market/index.json`
+```
+git+https://github.com/chinokoyuki/dsh-anime-model-avatars.git
+```
 
-  and install from the list. The index pins an exact commit and installs from Git, so it does not need npm.
-- **Local directory**: developers can clone the repo and install it from that directory with the plugin manager (`plugin_manager`'s `install_bundle`, target set to the absolute repo path).
+To pin a version, append a commit, for example
+`git+https://github.com/chinokoyuki/dsh-anime-model-avatars.git#2c47d96664a64ed7949ec4cd4a285a85950c5332`.
 
-The npm package name is `dsh-anime-model-avatars` too, so it can be found directly once it is published there.
+The repository is tagged `dsh-plugin`, so the plugin market (Discover) indexes it and it can be found there too.
 
 Refresh the page after installing or updating. Client-side hot reload does not always reach a page that is already open, so a refresh is the reliable path. The plugin then shows up under Settings → Plugins with its icon, title and description.
 
@@ -71,7 +73,7 @@ Adding a model series touches three places:
 
 Run `node --check client.js` afterwards and restart the plugin. For avatars, trim the transparent border, pad to a square, downscale to 64×64 and inline it as a data URI.
 
-The repository topics and the `package.json` keywords carry `dsh-plugin`, which is what indexers pick up. `market/index.json` is the format-1 plugin market index; keep it in sync when the version or the pinned commit changes.
+The repository topics and the `package.json` keywords carry `dsh-plugin`, which is how the plugin market indexes the repository. Bump `version` in `package.json` and push a tag for each release.
 
 ## License
 
