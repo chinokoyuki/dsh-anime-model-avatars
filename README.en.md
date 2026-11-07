@@ -39,16 +39,17 @@ Install straight from GitHub. In DSH, set the install target to:
 git+https://github.com/chinokoyuki/dsh-anime-model-avatars.git
 ```
 
-To pin a version, append a commit, for example
-`git+https://github.com/chinokoyuki/dsh-anime-model-avatars.git#2c47d96664a64ed7949ec4cd4a285a85950c5332`.
+To pin a revision, append `#` followed by its full commit SHA.
 
-The repository is tagged `dsh-plugin`, so the plugin market (Discover) indexes it and it can be found there too.
+The repository has the `dsh-plugin` topic and can be found through GitHub search. Each plugin market has its own catalog and review process; the topic alone does not mean it has been listed. If it is not in your market yet, install directly with the Git URL above.
 
 Refresh the page after installing or updating. Client-side hot reload does not always reach a page that is already open, so a refresh is the reliable path. The plugin then shows up under Settings → Plugins with its icon, title and description.
 
 ## Known limitations
 
 - The `/model` slash-command popup renders its own list, outside the model-name slot, so avatars do not appear there.
+- Thinking-label replacement currently recognizes only the Chinese UI text 深度求索中. English labels remain unchanged; avatar and icon styling does not depend on this text match.
+- Thinking styles currently apply page-wide rather than per conversation, so different models in a multi-conversation page may affect one another. After switching models or disabling the plugin, an old label may remain until the host renders it again; refreshing the page restores it.
 - The thinking style repaints the official running row: original icon hidden, own glyph drawn through a mask, wording replaced in place. A major DSH release could change that row's structure, in which case the selectors need a small update.
 - Avatars and icons are inlined into `client.js`, about 85 KB, mostly five 64×64 avatars.
 - Web GUI only; the terminal has none of this.
@@ -73,8 +74,12 @@ Adding a model series touches three places:
 
 Run `node --check client.js` afterwards and restart the plugin. For avatars, trim the transparent border, pad to a square, downscale to 64×64 and inline it as a data URI.
 
-The repository topics and the `package.json` keywords carry `dsh-plugin`, which is how the plugin market indexes the repository. Bump `version` in `package.json` and push a tag for each release.
+The repository topics and `package.json` keywords include `dsh-plugin` for discovery. Bump `version` in `package.json` and create a new tag for each release; do not overwrite existing release tags.
 
-## License
+## Artwork and license
 
-MIT, by [chinokoyuki](https://github.com/chinokoyuki).
+The code is [MIT-licensed](LICENSE) and maintained by [chinokoyuki](https://github.com/chinokoyuki).
+
+The model avatars and plugin icon were supplied by the maintainer and include non-commercial fan art and AI-generated images. These images, including their inlined copies in the client, are **not covered by the code's MIT license**. They are provided for non-commercial display and sharing, not for sale or commercial promotion. Character art visible in screenshots follows the same notice.
+
+Rights to the characters, trademarks and original works remain with their respective owners. Fan art or AI generation does not establish commercial permission for the original works. This project is not affiliated with the model vendors. See [ASSETS.md](ASSETS.md) for the scope of this notice. For attribution additions or artwork concerns, please open an [issue](https://github.com/chinokoyuki/dsh-anime-model-avatars/issues).

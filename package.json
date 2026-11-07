@@ -18,7 +18,9 @@
     "locale/*.json",
     "icon.png",
     "docs/*.svg",
-    "assets/**/*"
+    "assets/**/*",
+    "ASSETS.md",
+    "screenshots.json"
   ],
   "engines": {
     "dsh": ">=0.2.2-0"
@@ -33,7 +35,7 @@
     "thinking-indicator"
   ],
   "author": "chinokoyuki",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chinokoyuki/dsh-anime-model-avatars.git"
